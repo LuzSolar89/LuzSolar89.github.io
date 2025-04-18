@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Centros de Cómputo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@400;600&family=Anton&display=swap" rel="stylesheet">
+    <style>
+        /* (Mismos estilos que el archivo original) */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f1fa;
+            color: #333;
+            line-height: 1.6;
+            background-image: linear-gradient(135deg, #0066ff 0%, #00bfff 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 2.5rem;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 40px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0066ff;
+            font-family: 'Anton', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-family: 'Roboto', sans-serif;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1rem;
+        }
+
+        ul li {
+            margin: 15px 0;
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-family: 'Oswald', sans-serif;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+		.boton-regresar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton-regresar:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gestión de Centros de Cómputo</h1>
+</header>
+<button class="boton-regresar" onclick="window.location.href='index.html'">Volver a la página principal</button>
+
+<div class="container">
+    <section class="section">
+        <h2>Apoyo en la Administración de Recursos Tecnológicos</h2>
+        <p>Nuestra plataforma está diseñada para facilitar la gestión eficiente de los centros de cómputo. Proporciona herramientas que permiten a los encargados supervisar el uso de los recursos, optimizar la distribución de equipos y mantener un control detallado de software y hardware.</p>
+        <img src="img1.jpg" alt="Gestión de recursos tecnológicos">
+    </section>
+
+    <section class="section">
+        <h2>Funciones Clave para Administradores</h2>
+        <ul>
+            <li><strong>Inventario Automatizado:</strong> Controla en tiempo real todos los dispositivos y programas instalados en el centro.</li>
+            <li><strong>Asignación Inteligente:</strong> Permite distribuir los recursos tecnológicos según la demanda y prioridades.</li>
+            <li><strong>Alertas Preventivas:</strong> Notificaciones ante posibles fallos o necesidad de mantenimiento.</li>
+            <li><strong>Panel de Control:</strong> Visualiza estadísticas, reportes y actividad en una interfaz amigable.</li>
+            <li><strong>Auditorías Simplificadas:</strong> Herramientas integradas para realizar auditorías internas de forma rápida y precisa.</li>
+        </ul>
+        <div class="cta-btn">
+            <a href="#beneficios" class="btn">Explorar Beneficios</a>
+        </div>
+    </section>
+
+    <section id="beneficios" class="section">
+        <h2>Beneficios para la Gestión</h2>
+        <p>Gracias a su diseño intuitivo y funciones automatizadas, la plataforma reduce la carga administrativa y mejora la toma de decisiones. Ideal para escuelas, universidades, oficinas públicas y privadas que necesitan mantener sus centros de cómputo en funcionamiento óptimo.</p>
+        <img src="img2.jpg" alt="Centro de cómputo moderno">
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Plataforma de Gestión Tecnológica. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>

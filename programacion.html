@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lenguajes de Programación</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3;
+      color: #0b2e59;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url(img1.png); /* Cambia por tu fondo */
+      background-size: cover;
+      background-position: center;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: white;
+    }
+
+    .main-title {
+      font-size: 2.5rem;
+      margin: 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .intro {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #ffffff;
+      padding: 1.5rem 2rem;
+      border-left: 6px solid #0b2e59;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .intro p {
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-bottom: 2rem;
+    }
+
+    .card {
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      cursor: pointer;
+      background-color: #e7ebf0;
+    }
+
+    .card-header h2 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    .card-content {
+      padding: 1.2rem 1.5rem;
+      display: none;
+      border-top: 1px solid #dcdcdc;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .card-content img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
+
+    .card-content p, .card-content ul {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .card-content ul {
+      padding-left: 1.2rem;
+    }
+
+    .card-content li {
+      margin-bottom: 0.5rem;
+    }
+
+    button.toggle-btn {
+      background-color: #0b2e59;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+	.boton-regresar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton-regresar:hover {
+  background-color: #45a049;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera con fondo -->
+  <div class="header">
+    <h1 class="main-title">Lenguajes de Programación</h1>
+  </div>
+  <button class="boton-regresar" onclick="window.location.href='index.html'">Volver a la pagina principal</button>
+
+
+  <div class="intro">
+    <p>Este proyecto fue creado con tecnologías modernas del desarrollo web, combinando creatividad, diseño y funcionalidad. A través de este recorrido, te mostramos cómo se construyó todo, paso a paso.</p>
+    <p>Descubre qué hay detrás de cada línea de código: herramientas, lenguajes, entre otras</p>
+  </div>
+
+  <div class="container">
+
+    <!-- HTML -->
+    <div class="card">
+      <div class="card-header">
+        <h2>HTML</h2>
+        <button class="toggle-btn" onclick="toggleCard(this)">Ver más</button>
+      </div>
+      <div class="card-content">
+        <img src="html-imagen.webp" alt="HTML logo">
+        <p><strong>¿Qué es?</strong> HTML (HyperText Markup Language) es el lenguaje con el que damos estructura a las páginas web. Es el esqueleto de todo sitio.</p>
+        <ul>
+          <li>Permite crear títulos, párrafos, listas, tablas y más.</li>
+          <li>Se combina con CSS y JS para mejorar su presentación y funcionalidad.</li>
+          <li>Es interpretado por todos los navegadores.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CSS -->
+    <div class="card">
+      <div class="card-header">
+        <h2>CSS</h2>
+        <button class="toggle-btn" onclick="toggleCard(this)">Ver más</button>
+      </div>
+      <div class="card-content">
+        <img src="img3.jpg" alt="CSS logo">
+        <p><strong>¿Qué es?</strong> CSS (Cascading Style Sheets) es el lenguaje de estilos que hace que las páginas web se vean hermosas.</p>
+        <ul>
+          <li>Define colores, márgenes, tipografías, animaciones, etc.</li>
+          <li>Permite diseños adaptables (responsive).</li>
+          <li>Se aplica directamente al HTML mediante clases, IDs o etiquetas.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="card">
+      <div class="card-header">
+        <h2>JavaScript</h2>
+        <button class="toggle-btn" onclick="toggleCard(this)">Ver más</button>
+      </div>
+      <div class="card-content">
+        <img src="js.png" alt="JavaScript logo">
+        <p><strong>¿Qué es?</strong> JavaScript permite que las páginas web sean interactivas: botones, menús, validaciones, animaciones y más.</p>
+        <ul>
+          <li>Controla eventos y modifica el contenido sin recargar.</li>
+          <li>Es un lenguaje de programación completo.</li>
+          <li>Se usa también fuera del navegador (con Node.js).</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Java -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Java</h2>
+        <button class="toggle-btn" onclick="toggleCard(this)">Ver más</button>
+      </div>
+      <div class="card-content">
+        <img src="java.png" alt="Java logo">
+        <p><strong>¿Qué es?</strong> Java es un lenguaje de programación orientado a objetos, robusto y multiplataforma.</p>
+        <ul>
+          <li>Se usa en apps Android, servidores, bancos, videojuegos y más.</li>
+          <li>Funciona con la Máquina Virtual de Java (JVM).</li>
+          <li>Ideal para proyectos grandes y escalables.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleCard(button) {
+      const content = button.parentElement.nextElementSibling;
+      const isVisible = content.style.display === 'block';
+      content.style.display = isVisible ? 'none' : 'block';
+      button.textContent = isVisible ? 'Ver más' : 'Ver menos';
+    }
+  </script>
+
+</body>
+</html>

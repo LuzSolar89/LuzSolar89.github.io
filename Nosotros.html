@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6e3; /* Beige claro */
+      color: #0b2e59; /* Azul oscuro */
+    }
+
+    header, section {
+      padding: 60px 20px;
+    }
+
+    header {
+      background-color: #0b2e59; /* Azul oscuro */
+      color: #fdf6e3;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      border-bottom: 3px solid #0b2e59;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .btn-custom {
+      background-color: #0b2e59;
+      color: #fdf6e3;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #fdf6e3;
+      color: #0b2e59;
+      border: 1px solid #0b2e59;
+    }
+
+    .section-light {
+      background-color: #fdf6e3;
+    }
+
+    .section-dark {
+      background-color: #dbe9f4; /* Azul muy claro */
+    }
+
+    ul {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .carousel-item img {
+      max-height: 350px;
+      object-fit: contain;
+      margin: auto;
+      border-radius: 10px;
+      border: 2px solid #0b2e59;
+    }
+
+    .carousel-caption {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #0b2e59;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+	.boton-regresar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton-regresar:hover {
+  background-color: #45a049;
+}
+  </style>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+  <div class="container">
+    <h1>Plataforma de Gestión Tecnológica Educativa</h1>
+    <p>Contribuyendo al desarrollo sostenible con innovación y eficiencia</p>
+  </div>
+</header>
+<button class="boton-regresar" onclick="window.location.href='index.html'">Volver a la página principal</button>
+
+<!-- Sección Objetivos de Desarrollo Sostenible -->
+<section class="section-light text-center">
+  <div class="container">
+    <h2 class="section-title">Objetivos de Desarrollo Sostenible</h2>
+    <ul class="list-unstyled">
+      <li><strong>ODS 4:</strong> Garantizar una educación inclusiva, equitativa y de calidad para todos.</li>
+      <li><strong>ODS 9:</strong> Fomentar la innovación y mejorar la infraestructura tecnológica educativa.</li>
+      <li><strong>ODS 12:</strong> Promover un consumo responsable y sostenible de los recursos tecnológicos.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Sección Sobre Nosotros -->
+<section class="section-dark text-center">
+  <div class="container">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p>
+      Somos un equipo comprometido con el desarrollo de una plataforma web que facilite la gestión eficiente y efectiva de los recursos tecnológicos en instituciones educativas. 
+    </p>
+    <p>
+      Tenemos como objetivo principal contribuir al cumplimiento de los Objetivos de Desarrollo Sostenible (ODS) relacionados con la educación y la tecnología.
+    </p>
+    <ul class="list-unstyled">
+      <li> Misión: Facilitar la gestión y monitoreo de recursos tecnológicos.</li>
+      <li> Visión : Ser la plataforma lider en la transformación digital educativa, facilitando la gestión eficiente,equitativa y sostenible de los recursos técnologicos en instituciones educativas, para impulsar experiencias de aprendizaje innovadoras, inclusivas y de calidad.</li>
+      
+    </ul>
+  </div>
+</section>
+
+<!-- Sección del Equipo -->
+<section class="section-light text-center" id="carrusel">
+  <div class="container">
+    <h2 class="section-title">Conoce a Nuestro Equipo</h2>
+    <div id="carouselEquipo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="areli.jpg" class="d-block w-50" alt="Areli">
+          <div class="carousel-caption">
+            <h5>Areli Hernandez</h5>
+            <p>Lider del grupo y encargada de la sección de contacto</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="allison.jpg" class="d-block w-50" alt="Allison">
+          <div class="carousel-caption">
+            <h5>Allison Hernandez</h5>
+            <p>Encargada de la seccion de Administración de centros de cómputo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="dulce.jpg" class="d-block w-50" alt="Duche">
+          <div class="carousel-caption">
+            <h5>Dulce Ramírez</h5>
+            <p>Encargada de la sección "Nosotros" y de la sección de Auditoría administrativa</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="sofi.jpg" class="d-block w-50" alt="Integrante 4">
+          <div class="carousel-caption">
+            <h5>Sofía Martínez</h5>
+            <p>Encargada de la página principal y la sección de Lenguaje de programación</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="abi.jpg" class="d-block w-50" alt="Integrante 5">
+          <div class="carousel-caption">
+            <h5>Abigail Marquez</h5>
+            <p>Encargada de la seccion de contabilidad y del diseño de la pagina</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="romina.jpg" class="d-block w-50" alt="Integrante 6">
+          <div class="carousel-caption">
+            <h5>Romina González</h5>
+            <p>Encargada de la sección de Derecho.</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselEquipo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselEquipo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <a href="#" class="btn btn-custom">Ver más proyectos del equipo</a>
+  </div>
+</section>
+
+<!-- Scripts Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
